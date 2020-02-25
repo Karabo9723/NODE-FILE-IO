@@ -1,11 +1,9 @@
 let Visitor = require("../src/visitor")
+let neo = new Visitor("neo mantse", 10, "20 March 2009", "20:00", "The place is cute", "Karabo")
 
 
 
 describe("Testing the save() function", function(){
-let fs = require("fs")
-let neo = new Visitor("neo mantse", 10, "20 March 2009", "20:00", "The place is cute", "Karabo")
-
     // neo.save()
         it("checks if the save() function is defined", function(){
             expect(neo.save).toBeDefined();
@@ -17,3 +15,5 @@ let neo = new Visitor("neo mantse", 10, "20 March 2009", "20:00", "The place is 
             expect(neo.age).toBe(10);
         })
 })
+
+
